@@ -1,0 +1,10 @@
+.navbar {
+    background-color: var(--cor-primaria);
+}
+
+.btn-nav-link {
+    background-color: inherit;
+    width: 70%;
+    text-align: left;
+    font-size: 13px !important;
+}

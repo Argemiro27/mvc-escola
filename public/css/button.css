@@ -1,0 +1,74 @@
+/* Botões */
+.btn {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    border-radius: 4px;
+
+    border: none !important;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+}
+
+.btn-secondary {
+    background-color: #757575;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #616161;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:not(:disabled).active:focus {
+    background-color: var(--success);
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active {
+    background-color: var(--info);
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active {
+    background-color: var(--danger);
+}
+
+
+/* Ícones */
+.btn i {
+    margin-right: 4px;
+}
+
+.btn-action,
+.btn-action:focus,
+.btn-action:hover,
+.btn-action::after,
+.btn-action::before {
+    border: none !important;
+    width: 23px;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    /* .icon-edit {
+    }
+    .icon-trash {
+    }
+    .icon-print {
+    } */
+}

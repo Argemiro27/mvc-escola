@@ -1,0 +1,59 @@
+.modal {
+    overflow: hidden;
+}
+
+/* Adicionado para cobrir toda a tela */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+}
+
+.modal-body {
+    overflow-y: scroll;
+    max-height: 600px;
+}
+
+/* Centralizar o modal */
+.modal-dialog {
+    width: 80%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+.modal-header .btn-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 24px;
+    padding: 8px;
+}
+
+/* Estilo para o botão Salvar */
+.modal-header #btnSalvar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover para o botão Salvar */
+.modal-header #btnSalvar:hover {
+    background-color: #0056b3;
+}
+
+/* Ícone de salvar (Você pode substituir por um ícone Material UI real) */
+.modal-header #btnSalvar::before {
+    content: "\2714";
+    /* Código unicode do ícone de marca de seleção */
+    margin-right: 8px;
+}

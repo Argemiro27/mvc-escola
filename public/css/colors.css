@@ -1,0 +1,6 @@
+:root {
+    --cor-primaria: #1b1b1b; /* Azul */
+    --cor-secundaria: #d3c4c4; /* Verde */
+    --cor-terciaria: #e74c3c; /* Vermelho */
+    --success: rgb(45, 212, 129);
+}

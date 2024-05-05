@@ -1,0 +1,25 @@
+.table {
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+    
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--cor-primaria) !important;
+    color: rgb(117, 117, 117) !important;
+}
+
+td {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}

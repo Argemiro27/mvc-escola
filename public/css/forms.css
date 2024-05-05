@@ -1,0 +1,12 @@
+.form-control{
+    border-radius: 2px !important;
+    margin-bottom: 5px !important;
+    height: 25px;
+    font-size: 12px !important;
+}
+
+label{
+    
+    font-size: 12px !important;
+    margin-top: 5px !important;
+}
