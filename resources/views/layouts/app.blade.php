@@ -28,7 +28,7 @@
     <div class="container-fluid h-100">
         <div class="row">
             <div class="sidebar">
-                <img src="assets/icon.png" height="100px" alt="">
+                <img src="assets/icon.png" class="mt-5" height="100px" alt="">
                 <div class="sidebar-content">
                     <button class="btn btn-sidebar-link" onclick="toggleSubMenu('cadastros')">
                         <li>

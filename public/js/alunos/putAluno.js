@@ -28,7 +28,7 @@ $(document).on("click", ".btnSaveAluno", function (e) {
     Responsavel: $("#inputResponsavel").val(),
     NascResp: $("#inputDatNascResp").val(),
     NaturalidadeResp: $("#inputNaturalidadeResp").val(),
-    CPFResp: $("#inputCpfResp").val(),
+    txtcpfresponsavel: $("#inputCpfResp").val(),
     RgResp: $("#inputRGResp").val(),
     RgOrgaoResp: $("#inputOrgaoRGResp").val(),
     MaeResp: $("#inputNomMaeResp").val(),

@@ -2,6 +2,7 @@
 <script src="{{ asset('js/alunos/putAluno.js') }}"></script>
 
 @foreach ($alunos as $aluno)
+
 <div class="modal fade" id="yourModal{{ $aluno->IdAluno }}" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">

@@ -17,9 +17,9 @@
                     <th>Ações</th>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Classe</th>
+                    <th>Cidade</th>
                     <th>Telefone</th>
-                    <th>CPF</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,10 +37,6 @@
                                 data-placement="top" title="Remover">
                                 <i class="bi bi-trash-fill icon-trash"></i>
                             </button>
-                            {{-- <button href="#" class="btn-action btn-info btn-sm" data-toggle="tooltip"
-                                data-placement="top" title="Anexar Arquivo">
-                                <i class="bi bi-paperclip bi-icon-clip"></i>
-                            </button> --}}
                             <button href="#" class="btn-action btn-info btn-sm " data-toggle="tooltip"
                                 data-placement="top" title="Baixar PDF">
                                 <i class="bi bi-file-earmark-fill icon-print"></i>
@@ -49,7 +45,7 @@
                         <td>{{ $aluno->IdAluno }}</td>
                         <td>{{ $aluno->Nome }}</td>
                         <td>{{ $aluno->Cidade }}</td>
-                        <td>{{ $aluno->CEP }}</td>
+                        <td>{{ $aluno->Telefone }}</td>
                         <td>{{ $aluno->Status }}</td>
                     </tr>
                 @endforeach
