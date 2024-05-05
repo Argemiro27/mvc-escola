@@ -1,15 +1,15 @@
-// getter:
 $(document).on("click", ".btnOpenModal", function (e) {
     e.preventDefault();
-
-    var alunoId = $(this).data("idaluno"); // Aqui está a correção
+    console.log("Script executado!");
+    var alunoId = $(this).data("idaluno");
     console.log("Botão clicado:", this);
-    console.log("VALOR DO ALUNO ID VALE:",alunoId);
     $.ajax({
         url: "/alunos/" + alunoId,
         type: "GET",
         dataType: "json",
         success: function (data) {
+            console.log("DATA:",data);
+            // Preenchimento dos inputs dentro da função de sucesso do AJAX
             $("#inputIdAluno").val(data.IdAluno);
             $("#inputNome").val(data.Nome);
             $("#inputDataNasc").val(data.DataNasc);
@@ -41,14 +41,19 @@ $(document).on("click", ".btnOpenModal", function (e) {
             $("#inputNomMaeResp").val(data.MaeResp);
             $("#inputNomPaiResp").val(data.PaiResp);
             $("#inputTelefoneResp").val(data.TelefoneResp);
-          },
+
+            // Como os inputs já estão sendo renderizados, n precisei passar o id do aluno aqui
+            $("#modalEditAluno").modal("show");
+            $(".btnSaveAluno").data("idaluno", alunoId);
+
+            // Exibir mensagem de sucesso
+            showSuccessToast("Dados do aluno carregados com sucesso!");
+
+        },
         error: function () {
-            console.error("Erro ao obter os dados do aluno.");
+
+            // Exibir mensagem de erro
+            showErrorToast("Erro ao obter os dados do aluno.");
         },
     });
-
-    // Abre o modal correspondente
-    $("#yourModal" + alunoId).modal("show");
-
 });
-

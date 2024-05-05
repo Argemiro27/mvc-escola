@@ -2,7 +2,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <script src="{{ asset('js/alunos/openModal.js') }}"></script>
+    <script src="{{ asset('js/alunos/getDadosAluno.js') }}"></script>
+    <script src="{{ asset('js/toastify-script.js') }}"></script>
+
+
 
     <h2 class="mb-3">Listagem de alunos</h2>
     <div class="btn-group mb-3" role="group" aria-label="Basic example">

@@ -10,3 +10,7 @@ label{
     font-size: 12px !important;
     margin-top: 5px !important;
 }
+
+.form-group{
+    margin: 0;
+}

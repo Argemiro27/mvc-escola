@@ -33,24 +33,22 @@ $(document).on("click", ".btnSaveAluno", function (e) {
     RgOrgaoResp: $("#inputOrgaoRGResp").val(),
     MaeResp: $("#inputNomMaeResp").val(),
     PaiResp: $("#inputNomPaiResp").val(),
-    TelefoneResp: $("#inputTelefoneResp").val()
-    
+    TelefoneResp: $("#inputTelefoneResp").val(),
   };
   console.log("Dados do formulário:");
   console.log(formData);
-  // Enviar os dados para o backend usando AJAX
   $.ajax({
     url: "/alunos/" + alunoId,
     type: "PUT",
     data: { formData, _token: $('meta[name="csrf-token"]').attr("content") },
     dataType: "json",
     success: function (response) {
-      // Exibir mensagem de sucesso
-      console.log(response.message);
+      showSuccessToast(response.message);
+
     },
     error: function () {
-      // Exibir mensagem de erro
-      console.error("Erro ao salvar o aluno.");
+      showErrorToast("Erro ao salvar o aluno.");
+
     },
   });
 });

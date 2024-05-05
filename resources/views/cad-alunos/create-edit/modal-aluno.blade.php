@@ -1,10 +1,8 @@
 
 <script src="{{ asset('js/alunos/putAluno.js') }}"></script>
 
-@foreach ($alunos as $aluno)
-
-<div class="modal fade" id="yourModal{{ $aluno->IdAluno }}" tabindex="-1" role="dialog"
-    aria-labelledby="myModalLabel">
+<div class="modal fade" id="modalEditAluno" tabindex="-1" role="dialog"
+    aria-labelledby="modalEditAlunoLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -12,11 +10,10 @@
                 <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
 
-                <h4 class="modal-title" id="myModalLabel">Editar Aluno</h4>
+                <h4 class="modal-title" id="modalEditAlunoLabel">Editar Aluno</h4>
                 <button 
                 type="button" 
                 class="btn btn-success w-25 btnSaveAluno" 
-                data-idaluno="{{ $aluno->IdAluno }}" 
                 data-dismiss="modal"><span aria-hidden="true">SALVAR</span></button>
             </div>
             <div class="modal-body">
@@ -47,4 +44,3 @@
         </div>
     </div>
 </div>
-@endforeach
